@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.player {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(76, 0, 255);
+    cursor: move;
+    position: relative;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+span.player-name {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+    font-family: system-ui;
+    color: #ddd;
+}
+
+#ideal-team {
+    background-image: url('pitch.png');
+    background-position-x: -200px;
+    width: 920px;
+    height: 677px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.position-spot {
+    position: absolute;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-shadow: 0 1px 2px #00000079;
+    background-color: #0000003d;
+
+}
+
+.position-spot::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    top: -45px;
+    left: -4px;
+    margin: auto;
+}
+
+.goalkeeper {
+    top: 54%;
+    left: 160px;
+}
+
+.defender {
+    top: 54%;
+    left: 350px;
+}
+
+.midfielder {
+    top: 54%;
+    left: 550px;
+}
+
+.second-striker {
+    top: 35%;
+    left: 690px;
+}
+
+.striker {
+    top: 70%;
+    left: 690px;
+}

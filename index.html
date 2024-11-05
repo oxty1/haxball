@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crea tu equipo ideal de Haxball</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     </head>
 
     <body>
 
-    <div id="app"></div>
+        <div id="players-container">
+            <div class="player draggable" data-position="MCO"><span class="player-name">oxty</span></div>
+            <div class="player draggable" data-position="SD"><span class="player-name">enciso</span></div>
+            <div class="player draggable" data-position="SD"><span class="player-name">hodly</span></div>
+            <div class="player draggable" data-position="DF"><span class="player-name">ktts</span></div>
+            <div class="player draggable" data-position="MC"><span class="player-name">mel</span></div>
+        </div>
+        
+        <div id="ideal-team">
+            <div class="position-spot goalkeeper">GK</div>
+            <div class="position-spot defender">DF</div>
+            <div class="position-spot midfielder">MC</div>
+            <div class="position-spot second-striker">SD</div>
+            <div class="position-spot striker">DC</div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="script.js"></script>
-
+        <script src="script.js"></script>
     </body>
+
 </html>
